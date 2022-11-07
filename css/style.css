@@ -45,7 +45,16 @@ header {
 }.logo img {
     width: 100%;
 }
-.menu_hamburguesa_close{display: none;}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: var(--neutral-color3);
+}
+.menu_hamburguesa_close, nav{display: none;}
 
 /*Hero */
 .hero_img {padding-bottom: 24px;}
@@ -57,12 +66,13 @@ header {
     flex-direction: column;
     gap: 20px;
 }
-.hero_title {font-weight: 800;font-size: 40px;line-height: 40px;color: var(--neutral-color4);}
+.hero_title {font-weight: 800;font-size: 40px;line-height: 40px;color: var(--neutral-color4);max-width: 300px;}
 .hero_text {
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
     color: var(--neutral-color3);
+    max-width: 350px;
 }
 .hero_text_button {
     color: var(--neutral-color);
@@ -158,4 +168,20 @@ aside {
     font-size: 15px;
     line-height: 26px;
     color: var(--neutral-color3);
+}
+
+@media (min-width: 768px) {
+    .menu_hamburguesa {display: none;}
+    nav {display: block;}
+    section.content {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .hero_content {
+        flex-direction: row;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    .bottom_content {flex-direction: row;}
 }

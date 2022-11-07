@@ -1,0 +1,4 @@
+.bottom_content {
+    flex-direction: row;
+    padding-top: 71px;
+}
