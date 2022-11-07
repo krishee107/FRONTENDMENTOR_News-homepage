@@ -23,14 +23,16 @@
 html, body{
     min-height: 100vh;
     width: 100vw;
-    margin: 0;
+    margin: 0 auto;
     font-family: var(--ff);
     font-size: var(--fs);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    display: flex;
 }
 
 .container {
     padding: 28px 16px;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -66,13 +68,12 @@ nav ul {
     flex-direction: column;
     gap: 20px;
 }
-.hero_title {font-weight: 800;font-size: 40px;line-height: 40px;color: var(--neutral-color4);max-width: 300px;}
+.hero_title {font-weight: 800;line-height: 40px;color: var(--neutral-color4);max-width: 300px;font-size: 2.70em;}
 .hero_text {
     font-weight: 400;
-    font-size: 15px;
     line-height: 26px;
     color: var(--neutral-color3);
-    max-width: 350px;
+    font-size: 1em;
 }
 .hero_text_button {
     color: var(--neutral-color);
@@ -171,6 +172,7 @@ aside {
 }
 
 @media (min-width: 768px) {
+    .container{padding: 5% 10%;}
     .menu_hamburguesa {display: none;}
     nav {display: block;}
     section.content {
