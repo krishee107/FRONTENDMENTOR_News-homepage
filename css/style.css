@@ -56,6 +56,42 @@ nav ul {
     line-height: 26px;
     color: var(--neutral-color3);
 }
+
+/* Menu hamburguesa*/
+.active nav, .active .menu_hamburguesa_close {display: inline;}
+.active .menu_hamburguesa_open{display:none}
+
+.active nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    grid-area: N;
+}
+
+.active li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.active {
+    display: grid;
+    grid-template-areas:
+        "L M"
+        "N N";
+    justify-content: unset;
+}
+
+.active .logo {
+    grid-area: L;
+}
+
+.active .menu {
+    grid-area: M;
+    display: flex;
+    justify-content: end;
+}
+
 .menu_hamburguesa_close, nav{display: none;}
 
 /*Hero */
@@ -173,6 +209,10 @@ aside {
 
 @media (min-width: 768px) {
     .container{padding: 5% 10%;}
+
+ul i {
+    display: none !important;
+}
     .menu_hamburguesa {display: none;}
     nav {display: block;}
     section.content {
