@@ -57,6 +57,10 @@ nav ul {
     color: var(--neutral-color3);
 }
 
+li:hover {
+    color: var(--primary-color2);
+}
+
 /* Menu hamburguesa*/
 .active nav, .active .menu_hamburguesa_close {display: inline;}
 .active .menu_hamburguesa_open{display:none}
@@ -122,6 +126,10 @@ nav ul {
     padding: 10px 30px;
     margin: 24px;
     margin-left: unset;
+}
+
+.hero_text_button:hover {
+    background-color: var(--neutral-color4);
 }
 
 /* Aside news*/
@@ -198,6 +206,10 @@ aside {
     font-size: 18px;
     line-height: 24px;
     color: var(--neutral-color4);
+}
+
+.bottom_new_content_title:hover {
+    color: var(--primary-color2);
 }
 
 .bottom_new_content_text {
