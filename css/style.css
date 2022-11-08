@@ -59,6 +59,7 @@ nav ul {
 
 li:hover {
     color: var(--primary-color2);
+    cursor: pointer;
 }
 
 /* Menu hamburguesa*/
@@ -130,6 +131,7 @@ li:hover {
 
 .hero_text_button:hover {
     background-color: var(--neutral-color4);
+    cursor: pointer;
 }
 
 /* Aside news*/
@@ -210,6 +212,7 @@ aside {
 
 .bottom_new_content_title:hover {
     color: var(--primary-color2);
+    cursor: pointer;
 }
 
 .bottom_new_content_text {
